@@ -16,3 +16,15 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('welcome');
 });
+
+/* Route::get('/veggies/baigan', function () {
+    return 'Baigan';
+});*/
+
+/* Route::get('/veggies/{veggieName}', function (string $veggiename) {
+        return $veggiename;
+});*/
+
+Route::get('/veggies/{veggiename}', function (string $veggiename) {
+    return $veggiename;
+})->whereIn('veggiename', ['baigan', 'gobhi', 'aaloo','bhindi']);

@@ -13,11 +13,11 @@ class Song {
      * @param string $genre   The genre of the song.
      * @param int    $tempo   The tempo of the song in beats per minute.
      */
-    public function __construct($title, $artist, $genre, $tempo) {
-        $this->title = $title;
-        $this->artist = $artist;
-        $this->genre = $genre;
-        $this->tempo = $tempo;
+    public function __construct() {
+        $this->title ="" ;
+        $this->artist ="" ;
+        $this->genre ="" ;
+        $this->tempo =0;
     }
 
     /**
